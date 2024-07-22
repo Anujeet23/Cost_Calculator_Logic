@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 mongoose
-  .connect("mongodb+srv://admin:root@cluster0.s4o5jvj.mongodb.net/")
+  .connect("YOUR_URL")
   .then(() => console.log("Connected to Mong0DB"))
   .catch((err) => console.error("Error connecting to MongoDB:", err));
 
